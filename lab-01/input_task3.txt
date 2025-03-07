@@ -1,0 +1,7 @@
+Napisz program, który w pliku tekstowym znajdzie wszystkie 
+wystąpienia wybranego ciągu znaków. Program 
+jako parametr (linii komend) ma pobierać nazwę pliku oraz 
+ciąg znaków, który ma zostać znaleziony. 
+Jako wynik do konsoli programproszę wypisać numery linijek
+ oraz pozycje od początku linijek, 
+w których znaleziono szukany ciąg znaków, np. "linijka: program 10, pozycja: 5" (2 punkty).
