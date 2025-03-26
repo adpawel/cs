@@ -88,6 +88,7 @@ public class MainClass{
 
     public static Dictionary<string, List<Tweet>> LinkTweetsToUser(List<Tweet> tweets){
         Dictionary<string, List<Tweet>> dict = new Dictionary<string, List<Tweet>>();
+        
         foreach(Tweet tweet in tweets){
             if(!string.IsNullOrEmpty(tweet.UserName)){
                 if(dict.ContainsKey(tweet.UserName)){
@@ -151,7 +152,7 @@ public class MainClass{
 
         List<KeyValuePair<string, double>> idfList;
         idfList = idf
-            .OrderByDescending(w => w.Value)
+            .OrderBy(w => w.Value)
             .ToList();
 
         return idfList;
