@@ -27,7 +27,8 @@ public class MainClass{
         var resultsEx3 = from e in employees
             join et in employeeTerritories on e.employeeid equals et.employeeid
             join t in territories on et.territoryid equals t.territoryid
-            select new {nazwisko = e.lastname, reg = e.region, terytorium = t.territorydescription};
+            join r in regions on t.regionid equals r.regionid
+            select new {nazwisko = e.lastname, reg = r.regiondescription, terytorium = t.territorydescription};
         foreach (var e in resultsEx3.ToList()){
             Console.WriteLine(e.nazwisko + ", " + e.reg + ", " + e.terytorium);
         }
@@ -104,7 +105,11 @@ public class MainClass{
             }
 
             int orderCount = employee.Orders.Count();
-            mean = orderCount > 0 ? sum / orderCount : 0;
+            if(orderCount > 0){
+                mean = sum / orderCount;
+            } else {
+                mean = 0;
+            }
 
             Console.WriteLine("    Liczba zamówień: {0}, średnia: {1}, max: {2}", orderCount, mean, maxValue);
             }
@@ -137,7 +142,6 @@ class Reader<T>{
                     }
                 }
                 ++i;
-
             }
         }
         return items;
