@@ -1,0 +1,1 @@
+Jezeli typ polecenia = 0 program ma 

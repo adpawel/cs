@@ -1,0 +1,15 @@
+C:\Users\adpaw\Studia\Semestr4\PZ2\lab\lab07\bin\Debug\net9.0\lab07.exe
+C:\Users\adpaw\Studia\Semestr4\PZ2\lab\lab07\bin\Debug\net9.0\lab07.deps.json
+C:\Users\adpaw\Studia\Semestr4\PZ2\lab\lab07\bin\Debug\net9.0\lab07.runtimeconfig.json
+C:\Users\adpaw\Studia\Semestr4\PZ2\lab\lab07\bin\Debug\net9.0\lab07.dll
+C:\Users\adpaw\Studia\Semestr4\PZ2\lab\lab07\bin\Debug\net9.0\lab07.pdb
+C:\Users\adpaw\Studia\Semestr4\PZ2\lab\lab07\obj\Debug\net9.0\lab07.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adpaw\Studia\Semestr4\PZ2\lab\lab07\obj\Debug\net9.0\lab07.AssemblyInfoInputs.cache
+C:\Users\adpaw\Studia\Semestr4\PZ2\lab\lab07\obj\Debug\net9.0\lab07.AssemblyInfo.cs
+C:\Users\adpaw\Studia\Semestr4\PZ2\lab\lab07\obj\Debug\net9.0\lab07.csproj.CoreCompileInputs.cache
+C:\Users\adpaw\Studia\Semestr4\PZ2\lab\lab07\obj\Debug\net9.0\lab07.sourcelink.json
+C:\Users\adpaw\Studia\Semestr4\PZ2\lab\lab07\obj\Debug\net9.0\lab07.dll
+C:\Users\adpaw\Studia\Semestr4\PZ2\lab\lab07\obj\Debug\net9.0\refint\lab07.dll
+C:\Users\adpaw\Studia\Semestr4\PZ2\lab\lab07\obj\Debug\net9.0\lab07.pdb
+C:\Users\adpaw\Studia\Semestr4\PZ2\lab\lab07\obj\Debug\net9.0\lab07.genruntimeconfig.cache
+C:\Users\adpaw\Studia\Semestr4\PZ2\lab\lab07\obj\Debug\net9.0\ref\lab07.dll

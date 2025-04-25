@@ -1,0 +1,2 @@
+Zaszyfrowanie pliku algorytmem klucza symetrycznego przy użyciu 
+hasła. Program ma przyjmować cztery parametry

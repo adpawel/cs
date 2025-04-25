@@ -1,0 +1,1 @@
+Podpisywanie danych z pliku. Zakładamy, że mamy dwa pliki w których znajduje się klucz prywatny i publiczny algorytmu RSA

@@ -116,7 +116,6 @@ namespace ClientServer3{
                 response.Remove(response.Length - 2, 2);
             else
                 response.Append(' ');
-            response.Append(path);
             return response.ToString();
         }
 
