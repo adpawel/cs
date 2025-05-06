@@ -1,0 +1,13 @@
+@model List<string>
+
+<h2>Dane</h2>
+<ul>
+@foreach (var item in Model)
+{
+    <li>@item</li>
+}
+</ul>
+<form asp-action="AddData" method="post">
+    <input type="text" name="newData" class="form-control" placeholder="Add new row" required />
+    <button type="submit" class="btn btn-primary mt-2">Submit</button>
+</form>
