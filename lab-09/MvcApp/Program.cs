@@ -10,7 +10,7 @@ builder.Services.AddDistributedMemoryCache();
 
 builder.Services.AddSession(options =>
 {
-    options.IdleTimeout = TimeSpan.FromSeconds(30);
+    options.IdleTimeout = TimeSpan.FromSeconds(90);
     options.Cookie.HttpOnly = true;  // plik cookie jest niedostępny przez skrypt po stronie klienta
     options.Cookie.IsEssential = true;  // pliki cookie sesji będą zapisywane dzięki czemu sesje będzie mogła być śledzona podczas nawigacji lub przeładowania strony
 });
@@ -40,22 +40,21 @@ app.Use(async (ctx, next) =>
 {
     var path = ctx.Request.Path.Value.ToLower();
     
-    // Zdefiniuj listę zasobów, które wymagają autoryzacji
+    // Zasoby, które wymagają autoryzacji
     var protectedPaths = new[] { "/products", "/login/logout", "/home/privacy" };
 
-    Console.WriteLine($"Request path: {path}");
-    // Sprawdź, czy ścieżka pasuje do którejś z chronionych
+    Console.WriteLine($"Ścieżka: {path}");
     if (protectedPaths.Any(path.StartsWith))
     {
         // Jeśli użytkownik nie jest zalogowany, przekieruj na stronę logowania
         if (!ctx.Session.Keys.Contains("login"))
         {
             ctx.Response.Redirect("/Login/GetForm");
-            return;  // Przerwij dalsze przetwarzanie
+            return;  
         }
     }
 
-    // Jeśli użytkownik jest zalogowany, przejdź do następnego middleware
+    // Jeśli użytkownik jest zalogowany, przejdź dalej
     await next();
 });
 

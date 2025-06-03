@@ -10,11 +10,6 @@ public class LoginController : Controller
     [HttpGet("GetForm")]
     public IActionResult GetForm()
     {
-        // if (!HttpContext.Session.Keys.Contains("login"))
-        //     ViewData["login"] = "brak danych";
-        // else
-        //     ViewData["login"] = HttpContext.Session.GetString("login");
-
         return View();
     }
 
@@ -32,7 +27,6 @@ public class LoginController : Controller
         }
         else
         {
-            // ViewData["error"] = "Nieprawidłowy login lub hasło";
             return View();
         }
     }

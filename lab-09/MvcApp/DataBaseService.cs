@@ -37,6 +37,7 @@ public class DatabaseService{
             var hashed1 = MD5Hash("efgh");
             var hashed2 = MD5Hash("zzzz");
             var hashed3 = MD5Hash("asdfgh");
+            var hashed4 = MD5Hash("haslo");
 
             try {
                 using (var transaction = connection.BeginTransaction())
@@ -47,7 +48,8 @@ public class DatabaseService{
                         + "(Login, Password)"
                         + $"VALUES (\"abcd\", \"{hashed1}\"),"
                         + $"(\"xyz\", \"{hashed2}\"),"
-                        + $"(\"qwerty\", \"{hashed3}\")";
+                        + $"(\"qwerty\", \"{hashed3}\"),"
+                        + $"(\"admin\", \"{hashed4}\")";
                         insertCmd.ExecuteNonQuery();
 
                         insertCmd.CommandText =
@@ -108,6 +110,7 @@ public class DatabaseService{
             connection.Open();
             var command = connection.CreateCommand();
             command.CommandText = "INSERT INTO Dane (Dane) VALUES ($dane)";
+            // bez sql injection
             command.Parameters.AddWithValue("$dane", dane);
             command.ExecuteNonQuery();
         }
